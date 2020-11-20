@@ -62,11 +62,11 @@ class ResPartner(models.Model):
             )
         except EmailSyntaxError:
             raise ValidationError(
-                _("%s is an invalid email") % email.strip()
+                _("%s es un correo electrónico invalido") % email.strip()
             )
         except EmailUndeliverableError:
             raise ValidationError(
-                _("Cannot deliver to email address %s") % email.strip()
+                _("No es posible enviar a este correo electrónico %s") % email.strip()
             )
         return result['local'].lower() + '@' + result['domain_i18n']
 
