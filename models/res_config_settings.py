@@ -5,13 +5,13 @@ class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
     partner_email_check_filter_duplicates = fields.Boolean(
-        string="Filter duplicate partner email addresses",
-        help="Don't allow multiple partners to have the same email address.",
+        string="Filtrar correos electrónicos duplicados de contactos",
+        help="No permita que varios contactos tengan el mismo correo electrónico.",
     )
 
     partner_email_check_check_deliverability = fields.Boolean(
-        string="Check deliverability of email addresses",
-        help="Don't allow email addresses with providers that don't exist",
+        string="Verificar la capacidad de entrega de las direcciones de correo electrónico",
+        help="No permite direcciones de correo electrónico con proveedores que no existen",
     )
 
     @api.model
