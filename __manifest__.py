@@ -8,7 +8,7 @@
     'author': "Komit, Odoo Community Association (OCA)",
     'website': 'https://github.com/OCA/partner-contact',
     'category': 'Tools',
-    'depends': ['base_setup','crm'],
+    'depends': ['base_setup'],
     'installable': True,
     'application': False,
     'license': 'AGPL-3',

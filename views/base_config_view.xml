@@ -6,8 +6,8 @@
         <field name="inherit_id"
                ref="base_setup.res_config_settings_view_form" />
         <field name="arch" type="xml">
-            <xpath expr="//div[@name='integration']" position='after'>
-                <h2>Email validation</h2>
+            <xpath expr="//div[@name='multi_company']" position='after'>
+                <h2>Validación de Correo</h2>
                 <div class="row mt16 o_settings_container"
                      name="partner_email_check">
                     <div class="col-xs-12 col-md-6 o_setting_box">
@@ -17,7 +17,7 @@
                         <div class="o_setting_right_pane">
                             <label for="partner_email_check_filter_duplicates" />
                             <div class="text-muted">
-                                Require partner email addresses to be unique
+                                Verifica que los corres electronicos de los contactos deben ser únicos
                             </div>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                         <div class="o_setting_right_pane">
                             <label for="partner_email_check_check_deliverability" />
                             <div class="text-muted">
-                                Ensure that partner email addresses can be delivered to
+                                Garantiza que los correos electronicos puedan ser enviados
                             </div>
                         </div>
                     </div>
