@@ -62,7 +62,7 @@ class ResPartner(models.Model):
             )
         except EmailSyntaxError:
             raise ValidationError(
-                _("%s, es un correo electrónico invalido") % email.strip()
+                _("%s Es un correo electrónico invalido, verifique de nuevo el formato") % email.strip()
             )
         except EmailUndeliverableError:
             raise ValidationError(
