@@ -66,7 +66,7 @@ class ResPartner(models.Model):
             )
         except EmailUndeliverableError:
             raise ValidationError(
-                _("No es posible enviar a este correo electrónico: %s") % email.strip()
+                _("Verifique de nuevo el correo, No es posible enviar mensajes a este correo electrónico: %s") % email.strip()
             )
         return result['local'].lower() + '@' + result['domain_i18n']
 
